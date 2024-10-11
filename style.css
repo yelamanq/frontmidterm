@@ -1,0 +1,421 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter Tight;
+    align-items: center;
+}
+
+.content {
+    padding: 10px 30px;
+    max-width: 1309px;
+    padding-bottom: 100px;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    transition: .4s;
+}
+
+.header-content {
+    max-width: 1309px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dark {
+    background-color: rgb(3, 7, 18);
+    color: white;
+}
+
+.dark .secondary {
+    color: white;
+}
+
+.dark .contactme {
+    border-color: white;
+}
+
+.dark .burger {
+    border-color: white;
+}
+
+.menu {
+    background-color: rgb(3, 7, 18);
+    padding-bottom: 72px;
+    width: 100%;
+}
+
+.menu-content {
+    max-width: 1309px;
+    padding: 0 30px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-content hr {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: white;
+    opacity: .1;
+}
+
+.menu section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.go {
+    padding: 16px 28px;
+    border: 1px solid white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+    margin: 30px 0;
+}
+
+.go:hover {
+    border-color: #a6afc1;
+}
+
+.go:hover img {
+    opacity: .6;
+}
+
+.go svg {
+    height: 13px;
+    width: 13px;
+    transition: .2s;
+}
+
+.menu section a {
+    font-size: 72px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+
+.menu section a:hover {
+    opacity: .6;
+}
+
+.followme {
+    color: #6b7280;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 50px 0;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    transition: .2s;
+}
+
+.social:hover {
+    opacity: .6;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-right: 10px;
+}
+
+.social-svg {
+    height: 24px;
+    color: white;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.maincolor {
+    color: #B6BCC6;
+}
+
+.secondary {
+    color: black;
+}
+
+.nav {
+    display: flex;
+}
+
+.contactme {
+    display: flex;
+    background-color: transparent;
+    border: black 1px solid;
+    padding: 12px 20px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.contactme:hover {
+    opacity: .5;
+}
+
+.contactme:hover svg {
+    opacity: .5;
+}
+
+.contactme p {
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contactme svg {
+    height: 13px;
+    transition: .1s;
+}
+
+.burger {
+    background-color: transparent;
+    border: black 1px solid;
+    padding: 12px 20px;
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.burger svg {
+    transition: .2s;
+    height: 11px;
+}
+
+.burger:hover {
+    color: #6b7280;
+    border-color: #6b7280;
+}
+
+.burger:hover img {
+    opacity: .5;
+}
+
+.title {
+    font-size: 104px;
+    margin: 80px 0 50px 0;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+}
+
+.aboutme {
+    display: flex;
+}
+
+.myimg1 {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.myimg2 {
+    max-height: 350px;
+    max-width: 620px;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-right: 70px;
+}
+
+.shortbio {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-wrap: wrap;
+}
+
+.textbio1 {
+    font-size: 22px;
+    color: #374151;
+    font-weight: 300;
+}
+
+.textbio2 {
+    font-size: 22px;
+    color: #374151;
+    font-weight: 300;
+}
+
+.myfamily1 {
+    padding: 24px 48px;
+    background-color: #030712;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.myfamily2 {
+    padding: 24px 48px;
+    background-color: #030712;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.arrowimg {
+    height: 15px;
+}
+
+.myfamily1 p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.myfamily2 p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.menu {
+    display: none;
+    top: 85.5px;
+    position: absolute;
+}
+
+@media (max-width: 400px) {
+    .title {
+        margin: 40px 0;
+    }
+    .aboutme {
+        display: none;
+    }
+    .myimg1 {
+        margin: 30px 0;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+    .contactme p {
+        display: none;
+    }
+    .go {
+        display: none;
+    }
+    .menu section {
+        margin: 20px 0;
+    }
+    .menu section a {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .textbio1 {
+        font-size: 16px;
+    }
+    .myfamily1 {
+        padding: 10px 20px;
+    }
+    .myfamily1 p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 768px) {
+    .myfamily1 p {
+        font-size: 16px;
+    }
+    .title {
+        margin: 40px 0;
+    }
+    .aboutme {
+        display: none;
+    }
+    .myimg1 {
+        margin: 30px 0;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+    .contactme p {
+        display: none;
+    }
+    .go {
+        display: none;
+    }
+    .menu section {
+        margin: 20px 0;
+    }
+    .menu section a {
+        font-size: 60px;
+    }
+    .title {
+        font-size: 60px;
+    }
+    .textbio1 {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+    .aboutme {
+        display: none;
+    }
+    .myimg1 {
+        margin: 30px 0;
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .aboutme0 {
+        display: none;
+    }
+    .aboutme {
+        display: flex;
+    }
+
+}
+
