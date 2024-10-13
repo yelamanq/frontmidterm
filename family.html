@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>My family</title>
+</head>
+<body>
+    <header class="">
+        <div class="header-content">
+            <a class="logo" href="index.html"><span class="maincolor">yela</span><span class="secondary">man.</span></a>
+            <div class="nav">
+                <div class="contactme" onclick="openContact()">
+                    <p>Contact me</p>
+                    <svg class="plus-svg" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="5.75" y1="-3.27835e-08" x2="5.75" y2="11" stroke="currentColor" stroke-width="1.5"/>
+                        <line x1="11" y1="5.75" y2="5.75" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+                <div class="burger" onclick="toggleMenu()">
+                    <svg width="13" height="11" viewBox="0 0 13 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1.25" x2="13" y2="1.25" stroke="currentColor" stroke-width="1.5"/>
+                        <line y1="5.58334" x2="13" y2="5.58334" stroke="currentColor" stroke-width="1.5"/>
+                        <line y1="9.91666" x2="13" y2="9.91666" stroke="currentColor" stroke-width="1.5"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="menu">
+        <div class="menu-content">
+            <hr>
+            <section>
+                <a href="index.html">Home</a>
+                <div class="go" onclick="openHome()">
+                    <img src="img/arrow.svg" alt="">
+                </div>
+            </section>
+            <section>
+                <a href="family.html">Family</a>
+                <div class="go" onclick="openFamily()">
+                    <img src="img/arrow.svg" alt="">
+                </div>
+            </section>
+            <section>
+                <a href="education.html">Education</a>
+                <div class="go" onclick="openEducation()">
+                    <img src="img/arrow.svg" alt="">
+                </div>
+            </section>
+            <section>
+                <a href="hobbies.html">Hobbies</a>
+                <div class="go" onclick="openHobbies()">
+                    <img src="img/arrow.svg" alt="">
+                </div>
+            </section>
+            <hr>
+            <p class="followme">Follow me.</p>
+            <div class="socials">
+                <div class="social">
+                    <a href="#">INSTAGRAM</a>
+                    <svg class="social-svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.25 6H18V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="social">
+                    <a href="#">FACEBOOK</a>
+                    <svg class="social-svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.25 6H18V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="social">
+                    <a href="#">TELEGRAM</a>
+                    <svg class="social-svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.25 6H18V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+                <div class="social">
+                    <a href="#">TIKTOK</a>
+                    <svg class="social-svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 18L18 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M8.25 6H18V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="family__content">
+        <h1 class="family__title"><span>My </span><span class="maincolor">sweet</span><span> family</span></h1>
+        <div class="family__cards">
+            <div class="card">
+                <div class="card-icon">
+                    <img src="img/male-icon.svg" alt="">
+                </div>
+                <h2 class="card-name">My Dad - Shalkhar Abdullayev</h2>
+                <p class="card-info">He is a private entrepreneur. On April 12 he turned 50 years old.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="img/female-icon.svg" alt="">
+                </div>
+                <h2 class="card-name">My Mom - Bakhtygul Sugirova</h2>
+                <p class="card-info">She is a primary school teacher. On 1 June she turned 49 years old.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="img/female-icon.svg" alt="">
+                </div>
+                <h2 class="card-name">My Sister - Saule Kulzhanova</h2>
+                <p class="card-info">She is works as a pharmacist. On August 16 she turned 26 years old.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="img/male-icon.svg" alt="">
+                </div>
+                <h2 class="card-name">My Brother - Zhorabek Kulzhanov</h2>
+                <p class="card-info">He is a businessman. On July 15 he turned 24 years old.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="img/female-icon.svg" alt="">
+                </div>
+                <h2 class="card-name">My Sister - Kuralay Kulzhanova</h2>
+                <p class="card-info">She is a student of general medicine. On 13 July she turned 21 years old.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon">
+                    <img src="img/female-icon.svg" alt="">
+                </div>
+                <h2 class="card-name">My Little Sister - Asiya Kulzhan</h2>
+                <p class="card-info">She is in the 8th grade at school. On January 5 she turned 13 years old.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer__content">
+            <div class="footer__info">
+                <h1 class="footer__logo"><span class="maincolor">yela</span><span>man.</span></h1>
+                <p class="footer__text">A front-end web developer currently based in Almaty, Kazakhstan</p>
+            </div>
+            <div class="copyright__wrapper">
+                <p class="copyright">©2024. Designed and Powered by <span class="bold-text">Yelaman</span class="bold-text"></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

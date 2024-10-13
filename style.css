@@ -15,6 +15,7 @@ body {
     padding: 10px 30px;
     max-width: 1309px;
     padding-bottom: 100px;
+    min-height: calc(100vh - 390px);
 }
 
 header {
@@ -57,6 +58,8 @@ header {
     background-color: rgb(3, 7, 18);
     padding-bottom: 72px;
     width: 100%;
+    position: relative;
+    z-index: 1000;
 }
 
 .menu-content {
@@ -235,18 +238,18 @@ header {
     text-align: center;
 }
 
-.aboutme {
+.aboutme-hor {
     display: flex;
 }
 
-.myimg1 {
+.myimg-ver {
     max-width: 100%;
     height: auto;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.myimg2 {
+.myimg-hor {
     max-height: 350px;
     max-width: 620px;
     height: auto;
@@ -263,19 +266,19 @@ header {
     text-wrap: wrap;
 }
 
-.textbio1 {
+.textbio-ver {
     font-size: 22px;
     color: #374151;
     font-weight: 300;
 }
 
-.textbio2 {
+.textbio-hor {
     font-size: 22px;
     color: #374151;
     font-weight: 300;
 }
 
-.myfamily1 {
+.myfamily-ver {
     padding: 24px 48px;
     background-color: #030712;
     color: white;
@@ -287,7 +290,7 @@ header {
     cursor: pointer;
 }
 
-.myfamily2 {
+.myfamily-hor {
     padding: 24px 48px;
     background-color: #030712;
     color: white;
@@ -303,13 +306,13 @@ header {
     height: 15px;
 }
 
-.myfamily1 p {
+.myfamily-ver p {
     font-weight: 500;
     font-size: 20px;
-    margin-right: 20px;
+    margin-right: 15px;
 }
 
-.myfamily2 p {
+.myfamily-hor p {
     font-weight: 500;
     font-size: 20px;
     margin-right: 20px;
@@ -321,14 +324,326 @@ header {
     position: absolute;
 }
 
+/*-------------------------------- family.html ---------------------------------*/
+
+.family__content {
+    padding: 10px 30px;
+    max-width: 1309px;
+    padding-bottom: 50px;
+}
+
+.family__title {
+    font-size: 104px;
+    margin: 60px 0 50px 0;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+}
+
+.family__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    padding: 32px;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    width: 380px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+    background-color: #f9fafb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 88px;
+    height: 88px;
+}
+
+.card-icon img {
+    height: 40px;
+}
+
+.card-name {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.card-info {
+    font-weight: 400;
+    font-size: 14px;
+    color: #374151;
+}
+
+/* --------------------------------------- education.html -------------------------- */
+
+.education__content {
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+.education__title {
+    font-size: 104px;
+    margin: 60px 0 50px 0;
+    justify-content: center;
+    padding: 10px 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.education__wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.education__cards {
+    display: flex;
+    gap: 30px;
+    width: max-content;
+    animation: scroll-horizontal 200s linear infinite;
+    animation-play-state: running;
+}
+
+.education__cards:hover {
+    animation-play-state: paused;
+}
+
+.education__card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.education__card-title {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.education__card-info {
+    color: #374151;
+    font-weight: 400;
+    margin: 10px 0 20px 0;
+}
+
+@keyframes scroll-horizontal {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+/* --------------------------------------- hobbies.html ----------------------- */
+
+.hobbies__content {
+    padding: 10px 30px;
+    max-width: 1309px;
+    padding-bottom: 80px;
+}
+
+.hobbies__title {
+    font-size: 104px;
+    margin: 60px 0 50px 0;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+}
+
+.hobbies__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hobbies__card {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.hobbies__card-icon {
+    background-color: #f9fafb;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    margin-right: 15px;
+}
+
+.hobbies__card-icon img {
+    height: 25px;
+}
+
+.hobbies__card-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hobbies__card-name h2 {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.hobbies__card-text {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+
+/* --------------------------------------- contact.html ----------------------- */
+
+.contact__content {
+    padding: 10px 30px;
+    max-width: 1309px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__title {
+    font-size: 104px;
+    margin: 60px 0 50px 0;
+    justify-content: center;
+    font-weight: 700;
+    text-align: center;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    margin: 45px 0;
+    width: 500px;
+}
+
+.contact__form label {
+    color: #111827;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact__form .text-field {
+    border-style: none none solid;
+    border-width: 1px;
+    border-color: black black #d1d5db;
+    letter-spacing: .02em;
+    height: auto;
+    margin-bottom: 0;
+    padding: 0 16px 16px;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 30px;
+    font-family: Inter Tight;
+}
+
+.contact__form .text-field:focus {
+    border-style: none none solid;
+    border-color: black;
+    outline: none;
+}
+
+.contact__form ::placeholder {
+    font-weight: 300;
+    color: #808080;
+}
+
+.contact__form-button {
+    max-width: 150px;
+    width: auto;
+    background-color: black;
+    padding: 15px 40px;
+    color: white;
+    border-radius: 50px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer {
+    background-color: #030712;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    padding: 60px 0;
+}
+
+.footer__content {
+    max-width: 1309px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    font-size: 50px;
+}
+
+.footer__text {
+    font-size: 22px;
+    font-weight: 300;
+    color: #e5e7eb;
+    margin: 20px 0 60px;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.copyright {
+    color: #4b5563;
+}
+
+.copyright__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* --------------------------------------- adaptive --------------------------- */
+
 @media (max-width: 400px) {
     .title {
         margin: 40px 0;
+        font-size: 40px;
     }
-    .aboutme {
+    .aboutme-hor {
         display: none;
     }
-    .myimg1 {
+    .myimg-ver {
         margin: 30px 0;
         width: 100%;
         height: 100%;
@@ -346,31 +661,72 @@ header {
     .menu section a {
         font-size: 30px;
     }
-    .title {
+    .textbio-ver {
+        font-size: 16px;
+    }
+    .myfamily-ver {
+        padding: 15px 25px;
+    }
+    .myfamily-ver p {
+        font-size: 17px;
+    }
+    .arrowimg {
+        height: 13px;
+    }
+    .family__title {
+        margin: 40px 0;
+        font-size: 40px;
+    }
+    .card {
+        width: 100%;
+    }
+    .education__title {
+        margin: 40px 0;
+        font-size: 40px;
+    }
+    .education__card {
+        width: 300px;
+    }
+    .education__card-title {
+        font-size: 20px;
+    }
+    .education__card-info {
+        font-size: 14px;
+    }
+    .contact__title {
+        margin: 40px 0;
+        font-size: 40px;
+    }
+    .contact__form {
+        width: 100%;
+    }
+    .footer__logo {
         font-size: 30px;
     }
-    .textbio1 {
+    .footer__text {
         font-size: 16px;
     }
-    .myfamily1 {
-        padding: 10px 20px;
+    .copyright {
+        font-size: 14px;
     }
-    .myfamily1 p {
-        font-size: 16px;
+    .hobbies__title {
+        margin: 40px 0;
+        font-size: 40px;
     }
 }
 
 @media (min-width: 400px) and (max-width: 768px) {
-    .myfamily1 p {
+    .myfamily-ver p {
         font-size: 16px;
     }
     .title {
+        font-size: 60px;
         margin: 40px 0;
     }
-    .aboutme {
+    .aboutme-hor {
         display: none;
     }
-    .myimg1 {
+    .myimg-ver {
         margin: 30px 0;
         width: 100%;
         height: 100%;
@@ -388,34 +744,66 @@ header {
     .menu section a {
         font-size: 60px;
     }
-    .title {
-        font-size: 60px;
-    }
-    .textbio1 {
+    .textbio-ver {
         font-size: 22px;
     }
-
+    .family__title {
+        font-size: 60px;
+        margin: 40px 0;
+    }
+    .card {
+        width: 100%;
+    }
+    .education__title {
+        font-size: 60px;
+        margin: 40px 0;
+    }
+    .education__card {
+        width: 350px;
+    }
+    .contact__title {
+        font-size: 60px;
+        margin: 40px 0;
+    }
+    .contact__form {
+        width: 100%;
+    }
+    .footer__logo {
+        font-size: 40px;
+    }
+    .footer__text {
+        font-size: 20px;
+    }
+    .copyright {
+        font-size: 16px;
+    }
+    .hobbies__title {
+        font-size: 60px;
+        margin: 40px 0;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 1100px) {
-    .aboutme {
+    .aboutme-hor {
         display: none;
     }
-    .myimg1 {
+    .myimg-ver {
         margin: 30px 0;
         width: 100%;
         height: 100%;
         max-width: 100%;
     }
+    .card {
+        width: 350px;
+    }
 }
 
 @media (min-width: 1100px) {
-    .aboutme0 {
+    .aboutme-ver {
         display: none;
     }
-    .aboutme {
+    .aboutme-hor {
         display: flex;
     }
-
 }
 

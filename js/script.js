@@ -42,3 +42,28 @@ function openHobbies() {
 function openContact() {
     window.location.href = 'contact.html';
 }
+
+const cardsContainer = document.querySelector('.education__cards');
+const originalCards = document.querySelectorAll('.education__card');
+
+let scrollDuration = 10;
+
+function cloneCards() {
+    if (scrollDuration > 0) {
+        originalCards.forEach(card => {
+            const clone = card.cloneNode(true);
+            cardsContainer.appendChild(clone);
+        });
+        scrollDuration--;
+        requestAnimationFrame(cloneCards);
+    }
+}
+
+cloneCards();
+
+
+
+
+
+
+
